@@ -1,5 +1,8 @@
 import os
 
+file_path = os.getcwd() + "/alphabet"
+
+
 def rename_files(path):
 	# get a list of file names from a folder
 	os.chdir(path)
@@ -11,4 +14,4 @@ def rename_files(path):
 		os.rename(file_name, new_file_name)
 
 
-rename_files("/Users/ruyi/Udacity_HW/mini_project/alphabet")
+rename_files(file_path)
